@@ -10,19 +10,27 @@ startScreen.classList.remove("active");
 introScreen.classList.add("active");
 });
 let touchStartY = 0;
-let touchEndY = 0;
 
-startScreen.addEventListener("touchstart", (e) => {
-    touchStartY = e.changedTouches[0].screenY;
+document.addEventListener("touchstart", (e) => {
+    if (startScreen.classList.contains("active")) {
+        touchStartY = e.touches[0].clientY;
+    }
 });
 
-startScreen.addEventListener("touchend", (e) => {
-    touchEndY = e.changedTouches[0].screenY;
+document.addEventListener("touchend", (e) => {
 
-    if (touchStartY - touchEndY > 80) {
-        startScreen.classList.remove("active");
-        introScreen.classList.add("active");
+    if (startScreen.classList.contains("active")) {
+
+        let touchEndY = e.changedTouches[0].clientY;
+
+        if (touchStartY - touchEndY > 50) {
+
+            startScreen.classList.remove("active");
+            introScreen.classList.add("active");
+
+        }
     }
+
 });
 introBtn.addEventListener("click", () => {
 introScreen.classList.remove("active");
