@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dla Ciebie 🩷</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- EKRAN START -->
+
+<section id="start-screen" class="screen active">
+
+<div class="card">
+
+<img src="images/start.jpg" class="main-photo">
+
+<h1>Happy Birthday! 🎀</h1>
+
+<p>
+Przygotowałam dla Ciebie małą niespodziankę...
+</p>
+
+<button id="startBtn">
+✨ Rozpocznij przygodę ✨
+</button>
+
+</div>
+
+</section>
+
+<!-- EKRAN POWITALNY -->
+
+<section id="intro-screen" class="screen">
+
+<div class="card">
+
+<img src="images/intro.jpg" class="main-photo">
+
+<h2>Hej głupolu! 🩷</h2>
+
+<p>
+Z okazji Twoich urodzin przygotowałam dla Ciebie kilka drobiazgów.
+Niestety wszystkie gdzieś się "zgubiły"... 🙄
+</p>
+
+<p>
+Twoim zadaniem będzie odnalezienie każdego z nich.
+Każda poprawna odpowiedź zaprowadzi Cię do kolejnego prezentu.
+</p>
+
+<p>
+Przed Tobą <b>5 zagadek.</b>
+Rozwiązuj je po kolei i baw się dobrze! ✨
+</p>
+
+<p class="info">
+Pamiętaj, że poprawna odpowiedź jest tylko jedna,
+wpisuj z małej litery, z polskimi znakami jeśli takowe są.
+</p>
+
+<button id="introBtn">
+🚀 Lecimy!!
+</button>
+
+</div>
+
+</section>
+<section id="game-screen" class="screen">
+
+<div class="card">
+<div id="question1">
+<img id="main-photo1" src="images/etap1.jpg" class="main-photo">
+<img id="meme1" src="images/meme1.jpg" class="meme-photo" style="display:none;">
+<h2>Zagadka 1 🩷</h2>
+
+<p>
+(prezent jest tam)
+</p>
+
+<input id="answer" type="text" placeholder="Wpisz odpowiedź">
+
+<button id="checkBtn">
+Sprawdź ✨
+</button>
+
+<p id="message"></p>
+</div>
+<div id="success" style="display:none;">
+
+<img id="successImage1" src="images/etap1_ok.jpg" class="main-photo">
+
+<h2>Brawooo! 🎀</h2>
+
+<p>
+Udało Ci się znaleźć prezent!
+</p>
+
+<button id="nextBtn">
+Następna zagadka ➡️
+</button>
+
+</div>
+
+</div>
+
+</section>
+<section id="stage2-screen" class="screen">
+
+<div class="card">
+<div id="question2">
+<img src="images/etap2.jpg" class="main-photo">
+<img id="meme2" src="images/meme2.jpg" class="meme-photo" style="display:none;">
+<h2>Zagadka 2 🩷</h2>
+
+<p>
+(prezent jest tam)
+</p>
+
+<input id="answer2" type="text" placeholder="Wpisz odpowiedź">
+<button id="checkBtn2">
+Sprawdź ✨
+</button>
+
+<p id="message2"></p>
+</div>
+<div id="success2" style="display:none;">
+
+<img src="images/etap2_ok.jpg" class="main-photo">
+
+<h2>Brawooo! 🎀</h2>
+
+<p>
+Znalazłaś kolejny prezent!
+</p>
+<button id="nextBtn2">
+Następna zagadka ➡️
+</button>
+</div>
+
+</div>
+
+</section>
+<section id="stage3-screen" class="screen">
+
+<div class="card">
+<div id="question3">
+<img src="images/etap3.jpg" class="main-photo">
+<img id="meme3" src="images/meme3.jpg" class="meme-photo" style="display:none;">
+<h2>Zagadka 3 🩷</h2>
+
+<p>
+(prezent jest tam)
+</p>
+
+<input id="answer3" type="text" placeholder="Wpisz odpowiedź">
+
+<button id="checkBtn3">
+Sprawdź ✨
+</button>
+
+<p id="message3"></p>
+</div>
+<div id="success3" style="display:none;">
+
+<img src="images/etap3_ok.jpg" class="main-photo">
+<h2>Brawooo! 🎀</h2>
+
+<p>
+Znalazłaś kolejny prezent!
+</p>
+
+<button id="nextBtn3">
+Następna zagadka ➡️
+</button>
+
+</div>
+
+</div>
+
+</section>
+<section id="stage4-screen" class="screen">
+
+<div class="card">
+<div id="question4">
+<img src="images/etap4.jpg" class="main-photo">
+<img id="meme4" src="images/meme4.jpg" class="meme-photo" style="display:none;">
+<h2>Zagadka 4 🩷</h2>
+
+<p>
+(prezent jest tam)
+</p>
+
+<input id="answer4" type="text" placeholder="Wpisz odpowiedź">
+
+<button id="checkBtn4">
+Sprawdź ✨
+</button>
+
+<p id="message4"></p>
+</div>
+<div id="success4" style="display:none;">
+
+<img src="images/etap4_ok.jpg" class="main-photo">
+
+<h2>Brawooo! 🎀</h2>
+
+<p>
+Znalazłaś kolejny prezent!
+</p>
+
+<button id="nextBtn4">
+Następna zagadka ➡️
+</button>
+
+</div>
+
+</div>
+
+</section>
+<section id="stage5-screen" class="screen">
+
+<div class="card">
+<div id="question5">
+<img src="images/etap5.jpg" class="main-photo">
+<img id="meme5" src="images/meme5.jpg" class="meme-photo" style="display:none;">
+<h2>Zagadka 5 🩷</h2>
+
+<p>
+(prezent jest tam)
+</p>
+
+<input id="answer5" type="text" placeholder="Wpisz odpowiedź">
+
+<button id="checkBtn5">
+Sprawdź ✨
+</button>
+
+<p id="message5"></p>
+</div>
+<div id="success5" style="display:none;">
+
+<img src="images/koniec.jpg" class="main-photo">
+
+<h2>Brawooo! 🎀</h2>
+
+<p>
+Znalazłaś kolejny prezent!
+</p>
+
+</div>
+
+</div>
+
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
