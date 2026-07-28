@@ -39,6 +39,9 @@ message.innerHTML = "Brawo! 🎉";
 document.getElementById("main-photo1").style.display = "none";
 document.getElementById("meme1").style.display = "block";
 
+document.querySelector("#question1 h2").style.display = "none";
+document.querySelector("#question1 p").style.display = "none";
+
 answer.style.display = "none";
 checkBtn.style.display = "none";
 
@@ -57,7 +60,8 @@ document.getElementById("meme1").style.display = "none";
 
 answer.style.display = "block";
 checkBtn.style.display = "block";
-
+document.querySelector("#question1 h2").style.display = "block";
+document.querySelector("#question1 p").style.display = "block";
 message.innerHTML = "";
 
 backBtn1.style.display = "none";
