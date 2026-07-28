@@ -9,7 +9,21 @@ startBtn.addEventListener("click", () => {
 startScreen.classList.remove("active");
 introScreen.classList.add("active");
 });
+let touchStartY = 0;
+let touchEndY = 0;
 
+startScreen.addEventListener("touchstart", (e) => {
+    touchStartY = e.changedTouches[0].screenY;
+});
+
+startScreen.addEventListener("touchend", (e) => {
+    touchEndY = e.changedTouches[0].screenY;
+
+    if (touchStartY - touchEndY > 80) {
+        startScreen.classList.remove("active");
+        introScreen.classList.add("active");
+    }
+});
 introBtn.addEventListener("click", () => {
 introScreen.classList.remove("active");
 gameScreen.classList.add("active");
