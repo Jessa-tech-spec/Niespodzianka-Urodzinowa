@@ -162,9 +162,35 @@ message3.innerHTML = "Brawo! 🎉";
 document.querySelector("#stage3-screen .main-photo").style.display = "none";
 document.getElementById("meme3").style.display = "block";
 
-message3.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
-}
+document.querySelector("#question3 h2").style.display = "none";
+document.querySelector("#question3 p").style.display = "none";
 
+answer3.style.display = "none";
+checkBtn3.style.display = "none";
+
+message3.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
+
+document.getElementById("backBtn3").style.display = "block";
+
+}
+const backBtn3 = document.getElementById("backBtn3");
+
+backBtn3.addEventListener("click", () => {
+
+document.querySelector("#stage3-screen .main-photo").style.display = "block";
+document.getElementById("meme3").style.display = "none";
+
+document.querySelector("#question3 h2").style.display = "block";
+document.querySelector("#question3 p").style.display = "block";
+
+answer3.style.display = "block";
+checkBtn3.style.display = "block";
+
+message3.innerHTML = "";
+
+backBtn3.style.display = "none";
+
+});
 });
 const nextBtn3 = document.getElementById("nextBtn3");
 const stage4Screen = document.getElementById("stage4-screen");
@@ -200,9 +226,35 @@ message4.innerHTML = "Brawo! 🎉";
 document.querySelector("#stage4-screen .main-photo").style.display = "none";
 document.getElementById("meme4").style.display = "block";
 
-message4.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
-}
+document.querySelector("#question4 h2").style.display = "none";
+document.querySelector("#question4 p").style.display = "none";
 
+answer4.style.display = "none";
+checkBtn4.style.display = "none";
+
+message4.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
+
+document.getElementById("backBtn4").style.display = "block";
+
+}
+const backBtn4 = document.getElementById("backBtn4");
+
+backBtn4.addEventListener("click", () => {
+
+document.querySelector("#stage4-screen .main-photo").style.display = "block";
+document.getElementById("meme4").style.display = "none";
+
+document.querySelector("#question4 h2").style.display = "block";
+document.querySelector("#question4 p").style.display = "block";
+
+answer4.style.display = "block";
+checkBtn4.style.display = "block";
+
+message4.innerHTML = "";
+
+backBtn4.style.display = "none";
+
+});
 });
 const nextBtn4 = document.getElementById("nextBtn4");
 const stage5Screen = document.getElementById("stage5-screen");
@@ -236,7 +288,33 @@ message5.innerHTML = "Brawo! 🎉";
 document.querySelector("#stage5-screen .main-photo").style.display = "none";
 document.getElementById("meme5").style.display = "block";
 
-message5.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
-}
+document.querySelector("#question5 h2").style.display = "none";
+document.querySelector("#question5 p").style.display = "none";
 
+answer5.style.display = "none";
+checkBtn5.style.display = "none";
+
+message5.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
+
+document.getElementById("backBtn5").style.display = "block";
+
+}
+const backBtn5 = document.getElementById("backBtn5");
+
+backBtn5.addEventListener("click", () => {
+
+document.querySelector("#stage5-screen .main-photo").style.display = "block";
+document.getElementById("meme5").style.display = "none";
+
+document.querySelector("#question5 h2").style.display = "block";
+document.querySelector("#question5 p").style.display = "block";
+
+answer5.style.display = "block";
+checkBtn5.style.display = "block";
+
+message5.innerHTML = "";
+
+backBtn5.style.display = "none";
+
+});
 });
