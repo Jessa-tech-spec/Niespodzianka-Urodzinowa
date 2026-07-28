@@ -100,8 +100,35 @@ message2.innerHTML = "Brawo! 🎉";
 document.querySelector("#stage2-screen .main-photo").style.display = "none";
 document.getElementById("meme2").style.display = "block";
 
+document.querySelector("#question2 h2").style.display = "none";
+document.querySelector("#question2 p").style.display = "none";
+
+answer2.style.display = "none";
+checkBtn2.style.display = "none";
+
 message2.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
+
+document.getElementById("backBtn2").style.display = "block";
+
 }
+});
+const backBtn2 = document.getElementById("backBtn2");
+
+backBtn2.addEventListener("click", () => {
+
+document.querySelector("#stage2-screen .main-photo").style.display = "block";
+document.getElementById("meme2").style.display = "none";
+
+document.querySelector("#question2 h2").style.display = "block";
+document.querySelector("#question2 p").style.display = "block";
+
+answer2.style.display = "block";
+checkBtn2.style.display = "block";
+
+message2.innerHTML = "";
+
+backBtn2.style.display = "none";
+
 });
 const nextBtn2 = document.getElementById("nextBtn2");
 const stage3Screen = document.getElementById("stage3-screen");
