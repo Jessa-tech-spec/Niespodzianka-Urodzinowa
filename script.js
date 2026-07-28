@@ -39,10 +39,30 @@ message.innerHTML = "Brawo! 🎉";
 document.getElementById("main-photo1").style.display = "none";
 document.getElementById("meme1").style.display = "block";
 
+answer.style.display = "none";
+checkBtn.style.display = "none";
+
 message.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
+
+document.getElementById("backBtn1").style.display = "block";
 
 }
 
+const backBtn1 = document.getElementById("backBtn1");
+
+backBtn1.addEventListener("click", () => {
+
+document.getElementById("main-photo1").style.display = "block";
+document.getElementById("meme1").style.display = "none";
+
+answer.style.display = "block";
+checkBtn.style.display = "block";
+
+message.innerHTML = "";
+
+backBtn1.style.display = "none";
+
+});
 });
 const nextBtn = document.getElementById("nextBtn");
 const stage2Screen = document.getElementById("stage2-screen");
