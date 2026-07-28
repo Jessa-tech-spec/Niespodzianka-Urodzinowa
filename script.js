@@ -173,6 +173,8 @@ message3.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
 document.getElementById("backBtn3").style.display = "block";
 
 }
+
+});
 const backBtn3 = document.getElementById("backBtn3");
 
 backBtn3.addEventListener("click", () => {
@@ -190,7 +192,6 @@ message3.innerHTML = "";
 
 backBtn3.style.display = "none";
 
-});
 });
 const nextBtn3 = document.getElementById("nextBtn3");
 const stage4Screen = document.getElementById("stage4-screen");
@@ -237,6 +238,8 @@ message4.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
 document.getElementById("backBtn4").style.display = "block";
 
 }
+
+});
 const backBtn4 = document.getElementById("backBtn4");
 
 backBtn4.addEventListener("click", () => {
@@ -254,7 +257,6 @@ message4.innerHTML = "";
 
 backBtn4.style.display = "none";
 
-});
 });
 const nextBtn4 = document.getElementById("nextBtn4");
 const stage5Screen = document.getElementById("stage5-screen");
@@ -299,6 +301,8 @@ message5.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
 document.getElementById("backBtn5").style.display = "block";
 
 }
+
+});
 const backBtn5 = document.getElementById("backBtn5");
 
 backBtn5.addEventListener("click", () => {
@@ -316,5 +320,4 @@ message5.innerHTML = "";
 
 backBtn5.style.display = "none";
 
-});
 });
