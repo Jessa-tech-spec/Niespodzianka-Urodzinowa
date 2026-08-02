@@ -37,8 +37,16 @@ document.addEventListener("touchend", (e) => {
 
 });
 introBtn.addEventListener("click", () => {
-introScreen.classList.remove("active");
-gameScreen.classList.add("active");
+
+    document.getElementById("rocket").classList.add("rocket-fly");
+
+    setTimeout(() => {
+
+        introScreen.classList.remove("active");
+        gameScreen.classList.add("active");
+
+    }, 800);
+
 });
 const checkBtn = document.getElementById("checkBtn");
 const answer = document.getElementById("answer");

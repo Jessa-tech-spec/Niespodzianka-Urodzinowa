@@ -197,3 +197,21 @@ input{
 #startBtn {
     display: none;
 }
+@keyframes rocketFly {
+
+    0% {
+        transform: translate(0,0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(180px,-180px) rotate(35deg);
+        opacity: 0;
+    }
+
+}
+
+.rocket-fly {
+    display: inline-block;
+    animation: rocketFly .8s ease-in forwards;
+}
