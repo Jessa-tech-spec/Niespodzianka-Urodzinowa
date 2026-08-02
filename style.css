@@ -44,8 +44,10 @@ object-fit:cover;
 }
 
 h1{
+font-family:'Parisienne',cursive;
 color:#e85b93;
-font-size:34px;
+font-size:52px;
+font-weight:400;
 margin-bottom:15px;
 }
 
@@ -196,22 +198,4 @@ input{
 }
 #startBtn {
     display: none;
-}
-@keyframes rocketFly {
-
-    0% {
-        transform: translate(0,0) rotate(0deg);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translate(180px,-180px) rotate(35deg);
-        opacity: 0;
-    }
-
-}
-
-.rocket-fly {
-    display: inline-block;
-    animation: rocketFly .8s ease-in forwards;
 }
