@@ -27,6 +27,10 @@ document.addEventListener("touchend", (e) => {
 
             startScreen.classList.remove("active");
             introScreen.classList.add("active");
+            window.scrollTo({
+    top: 0,
+    behavior: "instant"
+});
 
         }
     }
