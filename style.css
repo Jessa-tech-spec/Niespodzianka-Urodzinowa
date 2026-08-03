@@ -179,7 +179,6 @@ input{
 
 }
 @keyframes rocketFly {
-
     0% {
         transform: translate(0, 0) rotate(0deg);
         opacity: 1;
@@ -189,19 +188,12 @@ input{
         transform: translate(180px, -180px) rotate(35deg);
         opacity: 0;
     }
-
 }
 
 .rocket-fly {
     display: inline-block;
     animation: rocketFly 0.8s ease forwards;
 }
-.rocket-fly {
-    display: inline-block;
-    animation: rocketFly 0.8s ease forwards;
-}
-}
-
 
 @keyframes arrowMove {
 
