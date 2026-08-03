@@ -38,7 +38,11 @@ document.addEventListener("touchend", (e) => {
 });
 introBtn.addEventListener("click", () => {
 
-    document.getElementById("rocket").classList.add("rocket-fly");
+    const rocket = document.getElementById("rocket");
+
+console.log(rocket);
+
+rocket.classList.add("rocket-fly");
 
     setTimeout(() => {
 
