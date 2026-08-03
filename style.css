@@ -233,3 +233,11 @@ input{
 #startBtn {
     display: none;
 }
+.meme-photo{
+    width:70%;
+    max-width:300px;
+    height:auto;
+    object-fit:contain;
+    display:block;
+    margin:20px auto;
+}
