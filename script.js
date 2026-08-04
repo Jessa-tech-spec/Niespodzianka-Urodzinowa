@@ -56,6 +56,7 @@ const success = document.getElementById("success");
 checkBtn.addEventListener("click", () => {
 
 if (answer.value.toLowerCase() === "prezent") {
+    document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
 
 document.getElementById("meme1").style.display = "none";
@@ -70,7 +71,7 @@ document.getElementById("successImage1").style.display = "block";
 message.innerHTML = "Brawo! 🎉";
 
 } else {
-
+document.querySelector(".screen.active").classList.add("wrong-animation");
 document.getElementById("main-photo1").style.display = "none";
 document.getElementById("meme1").style.display = "block";
 
@@ -118,6 +119,7 @@ const success2 = document.getElementById("success2");
 checkBtn2.addEventListener("click", () => {
 
 if (answer2.value.toLowerCase() === "prezent") {
+    document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
 
 document.querySelector("#stage2-screen .main-photo").style.display = "none";
@@ -132,7 +134,7 @@ message2.innerHTML = "Brawo! 🎉";
 
 
 } else {
-
+document.querySelector(".screen.active").classList.add("wrong-animation");
 document.querySelector("#stage2-screen .main-photo").style.display = "none";
 document.getElementById("meme2").style.display = "block";
 
@@ -181,6 +183,7 @@ const success3 = document.getElementById("success3");
 checkBtn3.addEventListener("click", () => {
 
 if (answer3.value.toLowerCase() === "prezent") {
+    document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
 
 document.querySelector("#stage3-screen .main-photo").style.display = "none";
@@ -195,7 +198,7 @@ message3.innerHTML = "Brawo! 🎉";
 
 
 } else {
-
+document.querySelector(".screen.active").classList.add("wrong-animation");
 document.querySelector("#stage3-screen .main-photo").style.display = "none";
 document.getElementById("meme3").style.display = "block";
 
@@ -247,6 +250,7 @@ const success4 = document.getElementById("success4");
 checkBtn4.addEventListener("click", () => {
 
 if (answer4.value.toLowerCase() === "prezent") {
+    document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
 
 document.querySelector("#stage4-screen .main-photo").style.display = "none";
@@ -261,7 +265,7 @@ message4.innerHTML = "Brawo! 🎉";
 
 
 } else {
-
+document.querySelector(".screen.active").classList.add("wrong-animation");
 document.querySelector("#stage4-screen .main-photo").style.display = "none";
 document.getElementById("meme4").style.display = "block";
 
@@ -311,6 +315,7 @@ const success5 = document.getElementById("success5");
 checkBtn5.addEventListener("click", () => {
 
 if (answer5.value.toLowerCase() === "prezent") {
+    document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
 document.querySelector("#stage5-screen .main-photo").style.display = "none";
 document.getElementById("meme5").style.display = "none";
@@ -324,7 +329,7 @@ message5.innerHTML = "Brawo! 🎉";
 
 
 } else {
-
+document.querySelector(".screen.active").classList.add("wrong-animation");
 document.querySelector("#stage5-screen .main-photo").style.display = "none";
 document.getElementById("meme5").style.display = "block";
 
