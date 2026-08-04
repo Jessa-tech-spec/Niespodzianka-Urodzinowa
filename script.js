@@ -118,6 +118,7 @@ const success2 = document.getElementById("success2");
 checkBtn2.addEventListener("click", () => {
 
 if (answer2.value.toLowerCase() === "prezent") {
+    sparkleEffect();
 
 document.querySelector("#stage2-screen .main-photo").style.display = "none";
 document.getElementById("meme2").style.display = "none";
@@ -180,6 +181,7 @@ const success3 = document.getElementById("success3");
 checkBtn3.addEventListener("click", () => {
 
 if (answer3.value.toLowerCase() === "prezent") {
+    sparkleEffect();
 
 document.querySelector("#stage3-screen .main-photo").style.display = "none";
 document.getElementById("meme3").style.display = "none";
@@ -245,6 +247,7 @@ const success4 = document.getElementById("success4");
 checkBtn4.addEventListener("click", () => {
 
 if (answer4.value.toLowerCase() === "prezent") {
+    sparkleEffect();
 
 document.querySelector("#stage4-screen .main-photo").style.display = "none";
 document.getElementById("meme4").style.display = "none";
@@ -308,7 +311,7 @@ const success5 = document.getElementById("success5");
 checkBtn5.addEventListener("click", () => {
 
 if (answer5.value.toLowerCase() === "prezent") {
-
+    sparkleEffect();
 document.querySelector("#stage5-screen .main-photo").style.display = "none";
 document.getElementById("meme5").style.display = "none";
 
