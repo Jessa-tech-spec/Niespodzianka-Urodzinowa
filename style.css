@@ -136,7 +136,6 @@ h1{
 font-size:29px;
 }
 
-}
 .meme-photo {
 width:70%;
 max-width:250px;
@@ -240,4 +239,32 @@ input{
     object-fit:contain;
     display:block;
     margin:20px auto;
+}
+/* ✨ Magic Sparkles */
+
+.sparkle{
+    position:fixed;
+    font-size:20px;
+    pointer-events:none;
+    z-index:9999;
+    animation:sparklePop .8s ease forwards;
+}
+
+@keyframes sparklePop{
+
+0%{
+opacity:0;
+transform:scale(.2) translateY(15px);
+}
+
+30%{
+opacity:1;
+transform:scale(1.2) translateY(0);
+}
+
+100%{
+opacity:0;
+transform:scale(.6) translateY(-25px);
+}
+
 }

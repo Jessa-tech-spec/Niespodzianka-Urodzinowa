@@ -38,11 +38,7 @@ document.addEventListener("touchend", (e) => {
 });
 introBtn.addEventListener("click", () => {
 
-    const rocket = document.getElementById("rocket");
-
-console.log(rocket);
-
-rocket.classList.add("rocket-fly");
+    document.getElementById("rocket").classList.add("rocket-fly");
 
     setTimeout(() => {
 
@@ -60,6 +56,7 @@ const success = document.getElementById("success");
 checkBtn.addEventListener("click", () => {
 
 if (answer.value.toLowerCase() === "prezent") {
+    sparkleEffect();
 
 document.getElementById("meme1").style.display = "none";
 document.getElementById("main-photo1").style.display = "none";
@@ -359,3 +356,28 @@ message5.innerHTML = "";
 backBtn5.style.display = "none";
 
 });
+
+function sparkleEffect(){
+
+    for(let i=0;i<6;i++){
+
+        const sparkle=document.createElement("div");
+        sparkle.className="sparkle";
+
+        const emojis=["✨","💖","⭐"];
+        sparkle.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+
+        sparkle.style.left=(45+Math.random()*12-6)+"vw";
+        sparkle.style.top=(40+Math.random()*12-6)+"vh";
+
+        sparkle.style.fontSize=(16+Math.random()*10)+"px";
+
+        document.body.appendChild(sparkle);
+
+        setTimeout(()=>{
+            sparkle.remove();
+        },900);
+
+    }
+
+}
