@@ -56,8 +56,13 @@ const success = document.getElementById("success");
 checkBtn.addEventListener("click", () => {
 
 if (answer.value.toLowerCase() === "prezent") {
-    document.querySelector(".screen.active").classList.add("correct-animation");
+    const screen = document.querySelector(".screen.active");
+
+screen.classList.remove("correct-animation");
+void screen.offsetWidth; // restart animacji
+screen.classList.add("correct-animation");
     sparkleEffect();
+    
 
 document.getElementById("meme1").style.display = "none";
 document.getElementById("main-photo1").style.display = "none";
@@ -71,7 +76,11 @@ document.getElementById("successImage1").style.display = "block";
 message.innerHTML = "Brawo! 🎉";
 
 } else {
-document.querySelector(".screen.active").classList.add("wrong-animation");
+const screen = document.querySelector(".screen.active");
+
+screen.classList.remove("wrong-animation");
+void screen.offsetWidth; // restart animacji
+screen.classList.add("wrong-animation");
 document.getElementById("main-photo1").style.display = "none";
 document.getElementById("meme1").style.display = "block";
 
