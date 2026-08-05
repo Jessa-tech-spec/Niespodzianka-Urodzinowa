@@ -131,6 +131,7 @@ checkBtn2.addEventListener("click", () => {
 if (answer2.value.toLowerCase().trim() === "lodowka") {
     document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
+    emojiEffect("🥂");
 
 document.querySelector("#stage2-screen .main-photo").style.display = "none";
 document.getElementById("meme2").style.display = "none";
@@ -195,6 +196,7 @@ checkBtn3.addEventListener("click", () => {
 if (answer3.value.toLowerCase().trim() === "balkon") {
     document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
+    emojiEffect("🫠");
 
 document.querySelector("#stage3-screen .main-photo").style.display = "none";
 document.getElementById("meme3").style.display = "none";
@@ -262,6 +264,7 @@ checkBtn4.addEventListener("click", () => {
 if (answer4.value.toLowerCase().trim() === "poduszka") {
     document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
+    emojiEffect("😈");
 
 document.querySelector("#stage4-screen .main-photo").style.display = "none";
 document.getElementById("meme4").style.display = "none";
@@ -327,6 +330,7 @@ checkBtn5.addEventListener("click", () => {
 if (answer5.value.toLowerCase().trim() === "toaletka") {
     document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
+    emojiEffect("💋");
 document.querySelector("#stage5-screen .main-photo").style.display = "none";
 document.getElementById("meme5").style.display = "none";
 
@@ -413,3 +417,4 @@ function emojiEffect(emoji){
     }, 1200);
 
 }
+

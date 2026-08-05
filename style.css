@@ -382,3 +382,22 @@ to{
 }
 
 }
+.wrong-flash{
+    animation:redFlash 0.35s ease;
+}
+
+@keyframes redFlash{
+
+0%{
+    background:rgba(255,0,0,0);
+}
+
+50%{
+    background:rgba(255,80,80,0.35);
+}
+
+100%{
+    background:rgba(255,0,0,0);
+}
+
+}
