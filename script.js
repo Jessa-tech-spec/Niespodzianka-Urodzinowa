@@ -334,7 +334,7 @@ checkBtn5.style.display = "none";
 message5.style.display = "none";
 document.getElementById("question5").style.display = "none";
 success5.style.display = "block";
-message5.innerHTML = "Brawo! 🎉";
+message5.innerHTML = "Mamy toooo!!!!! 🎉";
 
 
 } else {

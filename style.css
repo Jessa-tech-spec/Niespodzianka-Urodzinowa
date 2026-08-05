@@ -354,3 +354,68 @@ to{
 }
 
 }
+.emoji-effect{
+    display:inline-block;
+    font-size:22px;
+}
+
+
+/* 😶‍🌫️ dymek */
+.emoji1{
+    animation:fog 2s infinite;
+}
+
+@keyframes fog{
+    50%{
+        opacity:0.5;
+        transform:scale(1.15);
+    }
+}
+
+
+/* 🥂 toast */
+.emoji2{
+    animation:toast 1.2s infinite;
+}
+
+@keyframes toast{
+    50%{
+        transform:rotate(15deg) translateY(-5px);
+    }
+}
+
+
+/* 🫠 rozpływanie */
+.emoji3{
+    animation:melting 1.8s infinite;
+}
+
+@keyframes melting{
+    50%{
+        transform:scaleY(0.8);
+    }
+}
+
+
+/* 😈 diabełek */
+.emoji4{
+    animation:devil 1.5s infinite;
+}
+
+@keyframes devil{
+    50%{
+        transform:rotate(10deg) scale(1.15);
+    }
+}
+
+
+/* 💋 buziak */
+.emoji5{
+    animation:kiss 1.4s infinite;
+}
+
+@keyframes kiss{
+    50%{
+        transform:scale(1.2) translateY(-4px);
+    }
+}
