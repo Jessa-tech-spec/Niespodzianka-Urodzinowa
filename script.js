@@ -90,7 +90,7 @@ document.querySelector("#question1 p").style.display = "none";
 answer.style.display = "none";
 checkBtn.style.display = "none";
 
-message.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
+message.innerHTML = "Płakał, płakał, płakał, spróbuj jeszcze raz 🩷";
 
 document.getElementById("backBtn1").style.display = "block";
 
@@ -127,7 +127,7 @@ const success2 = document.getElementById("success2");
 
 checkBtn2.addEventListener("click", () => {
 
-if (answer2.value.toLowerCase().trim() === "lodówka") {
+if (answer2.value.toLowerCase().trim() === "lodowka") {
     document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
 
@@ -153,7 +153,7 @@ document.querySelector("#question2 p").style.display = "none";
 answer2.style.display = "none";
 checkBtn2.style.display = "none";
 
-message2.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
+message2.innerHTML = "Płakał, płakał, płakał, próbuj dalej 🩷";
 
 document.getElementById("backBtn2").style.display = "block";
 
@@ -217,7 +217,7 @@ document.querySelector("#question3 p").style.display = "none";
 answer3.style.display = "none";
 checkBtn3.style.display = "none";
 
-message3.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
+message3.innerHTML = "HAHAHAHAHAHAH płakał, płakał, płakał🩷";
 
 document.getElementById("backBtn3").style.display = "block";
 
@@ -284,7 +284,7 @@ document.querySelector("#question4 p").style.display = "none";
 answer4.style.display = "none";
 checkBtn4.style.display = "none";
 
-message4.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
+message4.innerHTML = "Oj oj, baka baka, próbuj dalej 🩷";
 
 document.getElementById("backBtn4").style.display = "block";
 
@@ -348,7 +348,7 @@ document.querySelector("#question5 p").style.display = "none";
 answer5.style.display = "none";
 checkBtn5.style.display = "none";
 
-message5.innerHTML = "Niestety to nie to, spróbuj jeszcze raz 🩷";
+message5.innerHTML = "No na bank, może jeszcze gwiazdkę z nieba? 🩷";
 
 document.getElementById("backBtn5").style.display = "block";
 
