@@ -354,4 +354,31 @@ to{
 }
 
 }
+.success-emoji{
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:60px;
+    z-index:999;
+    animation:emojiFly 1.2s ease forwards;
+}
 
+@keyframes emojiFly{
+
+0%{
+    opacity:0;
+    transform:translate(-50%,-50%) scale(0.3);
+}
+
+40%{
+    opacity:1;
+    transform:translate(-50%,-70%) scale(1.2);
+}
+
+100%{
+    opacity:0;
+    transform:translate(-50%,-150%) scale(1);
+}
+
+}

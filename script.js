@@ -62,6 +62,7 @@ screen.classList.remove("correct-animation");
 void screen.offsetWidth; // restart animacji
 screen.classList.add("correct-animation");
     sparkleEffect();
+    emojiEffect("😶‍🌫️");
     
 
 document.getElementById("meme1").style.display = "none";
@@ -396,5 +397,19 @@ function sparkleEffect(){
         },900);
 
     }
+
+}
+function emojiEffect(emoji){
+
+    const el = document.createElement("div");
+
+    el.innerHTML = emoji;
+    el.className = "success-emoji";
+
+    document.body.appendChild(el);
+
+    setTimeout(() => {
+        el.remove();
+    }, 1200);
 
 }
