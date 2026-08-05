@@ -55,7 +55,7 @@ const success = document.getElementById("success");
 
 checkBtn.addEventListener("click", () => {
 
-if (answer.value.toLowerCase() === "suszarka") {
+if (answer.value.toLowerCase().trim() === "suszarka") {
     const screen = document.querySelector(".screen.active");
 
 screen.classList.remove("correct-animation");
@@ -127,7 +127,7 @@ const success2 = document.getElementById("success2");
 
 checkBtn2.addEventListener("click", () => {
 
-if (answer2.value.toLowerCase() === "lodówka") {
+if (answer2.value.toLowerCase().trim() === "lodówka") {
     document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
 
@@ -191,7 +191,7 @@ const success3 = document.getElementById("success3");
 
 checkBtn3.addEventListener("click", () => {
 
-if (answer3.value.toLowerCase() === "balkon") {
+if (answer3.value.toLowerCase().trim() === "balkon") {
     document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
 
@@ -258,7 +258,7 @@ const success4 = document.getElementById("success4");
 
 checkBtn4.addEventListener("click", () => {
 
-if (answer4.value.toLowerCase() === "łóżko") {
+if (answer4.value.toLowerCase().trim() === "poduszka") {
     document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
 
@@ -323,7 +323,7 @@ const success5 = document.getElementById("success5");
 
 checkBtn5.addEventListener("click", () => {
 
-if (answer5.value.toLowerCase() === "toaletka") {
+if (answer5.value.toLowerCase().trim() === "toaletka") {
     document.querySelector(".screen.active").classList.add("correct-animation");
     sparkleEffect();
 document.querySelector("#stage5-screen .main-photo").style.display = "none";
