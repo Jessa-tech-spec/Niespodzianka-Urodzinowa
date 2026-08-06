@@ -401,3 +401,27 @@ to{
 }
 
 }
+.final-flash{
+    position:fixed;
+    inset:0;
+    background:white;
+    opacity:0;
+    pointer-events:none;
+    z-index:9999;
+    animation:flashBoom .6s ease;
+}
+
+@keyframes flashBoom{
+
+0%{
+    opacity:0;
+}
+
+15%{
+    opacity:.95;
+}
+
+100%{
+    opacity:0;
+}
+}

@@ -329,6 +329,7 @@ checkBtn5.addEventListener("click", () => {
 
 if (answer5.value.toLowerCase().trim() === "toaletka") {
     document.querySelector(".screen.active").classList.add("correct-animation");
+finalFlash();
 megaSparkleEffect();
 emojiEffect("💋");
 document.querySelector("#stage5-screen .main-photo").style.display = "none";
@@ -442,5 +443,18 @@ function megaSparkleEffect(){
         },2500);
 
     }
+
+}
+function finalFlash(){
+
+    const flash=document.createElement("div");
+
+    flash.className="final-flash";
+
+    document.body.appendChild(flash);
+
+    setTimeout(()=>{
+        flash.remove();
+    },600);
 
 }
