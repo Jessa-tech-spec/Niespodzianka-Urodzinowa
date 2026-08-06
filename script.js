@@ -329,8 +329,8 @@ checkBtn5.addEventListener("click", () => {
 
 if (answer5.value.toLowerCase().trim() === "toaletka") {
     document.querySelector(".screen.active").classList.add("correct-animation");
-    sparkleEffect();
-    emojiEffect("💋");
+megaSparkleEffect();
+emojiEffect("💋");
 document.querySelector("#stage5-screen .main-photo").style.display = "none";
 document.getElementById("meme5").style.display = "none";
 
@@ -417,4 +417,30 @@ function emojiEffect(emoji){
     }, 1200);
 
 }
+function megaSparkleEffect(){
 
+    for(let i=0;i<45;i++){
+
+        const sparkle=document.createElement("div");
+        sparkle.className="sparkle";
+
+        const emojis=["✨","💖","🎀","🌸","🩷"];
+
+        sparkle.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+
+        sparkle.style.left=Math.random()*100+"vw";
+        sparkle.style.top=Math.random()*100+"vh";
+
+        sparkle.style.fontSize=(18+Math.random()*22)+"px";
+
+        sparkle.style.animationDuration=(1+Math.random()*1.5)+"s";
+
+        document.body.appendChild(sparkle);
+
+        setTimeout(()=>{
+            sparkle.remove();
+        },2500);
+
+    }
+
+}
