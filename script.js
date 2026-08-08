@@ -327,7 +327,7 @@ const success5 = document.getElementById("success5");
 
 checkBtn5.addEventListener("click", () => {
 
-if (answer5.value.toLowerCase().trim() === "toaletka") {
+if (answer5.value.toLowerCase().trim() === "lalki") {
     document.querySelector(".screen.active").classList.add("correct-animation");
 finalFlash();
 megaSparkleEffect();
